@@ -53,6 +53,20 @@ html, body {
         color: var(--color-white);
     }
 
+.btn-white {
+    background-color: var(--color-white);
+    color: var(--color-theme);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+    .btn-white:hover {
+        background-color: var(--color-theme-dark);
+        color: var(--color-white);
+    }
+
+
 /* top-menu */
 .top-menu {
     background-color: var(--color-theme);
@@ -253,6 +267,10 @@ html, body {
             color: var(--color-theme);
         }
 
+        .showcase .showcase-body p {
+            margin: 2rem 0;
+        }
+
     .showcase img {
         display: none;
     }
@@ -266,7 +284,7 @@ html, body {
     .top-menu > .container {
         justify-content: space-between;
     }
-
+}
 
 @media (min-width: 768px) {
     .showcase .showcase-body h1 {
@@ -300,19 +318,17 @@ html, body {
            
 @media (min-width: 1200px) {
     .showcase .showcase-body {
-        
+        flex: 1;
+        width: 50%;
+    }
+
+    .showcae .showcase-body p {
+        width: 80%;
     }
 
     .showcase img {
         flex: 1;
         width: 100%;
     }
+    
 }
-
-
-
-
-
-
-
-
