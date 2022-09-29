@@ -649,6 +649,69 @@ a {
                         color: var(--color-theme);
                     }
 
+/* discount and learn-more box */
+.customer-discount {
+    background-color: var(--color-gray-1);
+}
+
+    .customer-discount .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 420px;
+        margin-top: 10rem;
+    }
+
+        .customer-discount .discount-box {
+            padding-top: 7rem;
+        }
+        .customer-discount .discount-box p {
+            margin: 1rem 0 1rem 0;
+            color: var(--color-white);
+            font-family: var(--font-roboto);
+        }
+        .customer-discount .discount-box h1 {
+            color: var(--color-white);
+            font-size: 35px;
+            font-weight: var(--font-weight-bold);
+            font-family: var(--font-play);
+        }
+        .customer-discount .discount-box span {
+            font-size: 60px;
+            font-weight: var(--font-weight-bold);
+            font-family: var(--font-play);
+            color: var(--color-white);
+        }
+        .customer-discount .discount-box a {
+            background-color: var(--color-theme-dark);
+            color: var(--color-white);
+        }
+            .customer-discount .discount-box a:hover {
+                color: var(--color-theme);
+                background: var(--color-white);
+            }
+
+    .customer-discount .container .discount-box {
+        background-color: var(--color-theme);
+        width: 255px;
+        height: 100%;
+    }    
+
+    .customer-discount .container .learnmore-box {
+        width: 445px;
+    }
+        .customer-discount .container .learnmore-box p {
+            color: var(--color-white);
+            text-align: start;
+        }
+
+            .customer-discount .container .learnmore-box a {
+                display: flex;
+                align-items: flex-start;
+                width: 181px;
+                height: 52px;
+            }
 
 .site-title {
     background-color: var(--color-theme-light-dark);
