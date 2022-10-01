@@ -12,23 +12,30 @@
 </head>
 <body>
     
+    <!-------------------------------
+        SECTION: TOP-MENU
+     -------------------------------->
     <header>
         <div class="top-menu">
             <div class="container border">
                 <div class="site-settings">
                     <div class="dropdown dropdown-theme me-3">
+                        <!-- SELECT LANGUAGE -->
                         <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
                         </button>
+                        <!-- TYPES OF LANGUAGE -->
                         <ul id="languages" class="dropdown-menu dropdown-theme">
                             <li><a class="dropdown-item" href="#">ENG</a></li>
                             <li><a class="dropdown-item" href="#">SWE</a></li>
                         </ul>
                     </div>
                     <div class="dropdown dropdown-theme me-3">
+                        <!-- SELECT CURRENCY -->
                         <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span id="selected-currency">EUR</span><i class="fa-solid fa-chevron-down ms-3"></i>
                         </button>
+                        <!-- TYPES OF CURRENCY -->
                         <ul id="currencies" class="dropdown-menu dropdown-theme">
                             <li><a class="dropdown-item" href="#">EUR</a></li>
                             <li><a class="dropdown-item" href="#">USD</a></li>
@@ -39,12 +46,14 @@
 
                 <div class="menu-links">
                      <span class="links">
+                        <!-- DIFFERENT LINKS -->
                         <a href="#">Newsletter</a>
                         <a href="#">Contact Us</a>
                         <a href="#">FAQs</a>
                      </span>
 
                      <span class="social-media">
+                        <!-- SOCIAL MEDIA LINKS -->
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -54,19 +63,25 @@
                 </div>
             </div>
         </div>
-
+        <!-------------------------------
+            SECTION: MAIN-MENU
+        -------------------------------->
         <div class="main-menu">
             <div class="container">
+                <!-- KENKATA LOGO -->
                 <div class="brand">
                     <a href="index.html"><img src="images/Logo.svg" alt="Kenkata Webshop"></a>
                 </div>
+                <!-- SEARCH FOR PRODUCTS -->
                 <div class="search">
                     <form id="searchboxForm">
                         <input id="query" type="text" placeholder="Search products...">
                         <button><i class="fa-regular fa-magnifying-glass"></i></button>
                     </form>
                 </div>
+                <!-- BUTTONS FOR SHOPPING -->
                 <div class="menu-links">
+                    <!-- SWITCH TO ACCOUNT TAB -->
                     <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i>My Account</a>
                     <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
                     <a class="menu-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
@@ -80,6 +95,7 @@
             <nav>
                 <div class="container">
                     <div class="browse-categories">
+                        <!-- CHOOSE BETWEEN CATEGORIES -->
                         <div class="dropdown">
                             <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span>
@@ -87,12 +103,14 @@
                                 </span>
                                 <i class="fa-regular chevron-down ms-4"></i>
                             </button>
+                            <!-- TYPES OF CATEGORIES -->
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Computers</a></li>
                                 <li><a class="dropdown-item" href="#">TV & Displays</a></li>
                             </ul>
                         </div>
                     </div>
+                    <!-- SPECIAL OFFER BUTTON -->
                     <div class="special-offer">
                         <button class="btn btn-theme">SPECIAL OFFER</button>
                     </div>
@@ -102,6 +120,7 @@
     </header>
 
     <section class="site-title">
+        <!-- SWITCH TO HOME SCREEN -->
         <div class="container">
             <h1>My Account</h1>
             <ul class="breadcrumb">
@@ -114,29 +133,36 @@
     <section class="signup-signin form-theme">
         <div class="container">
             <div class="card">
+                <!-- LOGIN FORM -->
                 <div class="card-body">
                     <h1 class="card-title">LOGIN</h1>
                     <form id="signinForm">
+                        <!-- INPUT EMAIL ADDRESS WITH ERROR TEXT -->
                         <div class="my-4">
                             <label for="signin_emailAddress">Email address <span class="required">*</span></label>
                             <input id="signin_emailAddress" type="email" required>
                             <div class="invalid-feedback">Please enter a emailaddress</div>
                         </div>
+                        <!-- INPUT PASSWORD WITH ERROR TEXT -->
                         <div class="mb-4">
                             <label for="signin_Password">Password <span class="required">*</span></label>
                             <input id="signin_Password" type="password" required>
                             <div class="invalid-feedback">Please enter your password</div>
                         </div>
+                        <!-- LOGIN BUTTON -->
                         <div class="mb-4 d-grid">
                             <button type="submit" class="btn btn-lg btn-theme">LOG IN</button>
                         </div>
                         <div class="mb-4 d-flex justify-content-between align-items-center">
+                            <!-- REMEMBER ME CHECKBOX -->
                             <div class="d-flex"> 
                                 <input id="signin_rememberMe" type="checkbox" class="me-2">
                                 <label for="signin_rememberMe">Remember me</label>
                             </div>
+                            <!-- LOST PASSWORD LINK -->
                             <a href="#">Lost your password?</a>
                         </div>
+                        <!-- LOGIN WITH FACEBOOK OR GOOGLE INSTEAD -->
                         <div class="mb-4 external-logins">
                             <div class="mb-0">
                                 <div class="label">OR LOGIN WITH</div>
@@ -155,32 +181,39 @@
                 </div>
             </div>
             <div class="card">
+                <!-- REGISTER ACCOUNT -->
                 <div class="card-body">
                     <h1 class="card-title">REGISTER</h1>
                     <p class="card-text text-small">Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</p>
 
                     <form id="signupForm">
+                        <!-- INPUT FIRSTNAME WITH ERROR TEXT -->
                         <div class="mb-4">
                             <label for="signup_firstName">Firstname <span class="required">*</span></label>
                             <input id="signup_firstName" type="text" required>
                             <div class="invalid-feedback">Please provide a name</div>
                         </div>
+                        <!-- INPUT LASTNAME WITH ERROR TEXT -->
                         <div class="mb-4">
                             <label for="signup_lastName">Lastname <span class="required">*</span></label>
                             <input id="signup_lastName" type="text" required>
                             <div class="invalid-feedback">Please provide a lastname</div>
                         </div>
+                        <!-- INPUT EMAIL ADDRESS WITH ERROR TEXT -->
                         <div class="mb-4">
                             <label for="signup_emailAddress">Email address <span class="required">*</span></label>
                             <input id="signup_emailAddress" type="email" required>
                             <div class="invalid-feedback">Please provide a valid emailaddress</div>
                         </div>
+                        <!-- INPUT PASSWORD WITH ERROR TEXT -->
                         <div class="mb-4">
                             <label for="signup_Password">Password <span class="required">*</span></label>
                             <input id="signup_Password" type="password" required>
-                            <div class="invalid-feedback">Please provide a password</div>
+                            <div class="invalid-feedback">Please provide a valid password</div>
                         </div>
+                        <!-- STORED DATA INFORMATION -->
                         <p class="card-text">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy.</a></p>
+                        <!-- SUBMIT BUTTON -->
                         <div class="mb-3 d-grid">
                             <button type="submit" class="btn btn-lg btn-theme">REGISTER</button>
                         </div>
@@ -190,6 +223,15 @@
             </div>
         </div>
     </section>
+
+    <!-- COPYRIGHT FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <p>© Copyright 2022 Kenkata</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 <html>
